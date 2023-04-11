@@ -17,7 +17,7 @@
             <RowDefinition Height="32"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid x:Name="AppTitleBar">
+        <Grid x:Name="AppTitleBar" Background="Transparent">
             <Image Source="Images/"
                    HorizontalAlignment="Left" 
                    Width="16" Height="16" 
@@ -41,7 +41,7 @@
             </StackPanel>
 
         </NavigationView>
-        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="main">
             <ComboBox  x:Name="cmbDisplays" >
                 <ComboBoxItem Content = "Item #1"/>
                 <ComboBoxItem Content = "Item #2"/>
@@ -49,7 +49,7 @@
             </ComboBox>
             <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
             <Button >Hello</Button>
-            <Rectangle Fill="{ThemeResource AcrylicInAppFillColorDefaultBrush}" />
+            <Frame x:Name="rootFrame"/>
         </StackPanel>
 
 

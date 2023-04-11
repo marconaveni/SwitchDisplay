@@ -13,13 +13,15 @@
     
     <Grid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <ComboBox  x:Name="cmbDisplays" >
-                <ComboBoxItem Content = "Item #1"/>
-                <ComboBoxItem Content = "Item #2"/>
-                <ComboBoxItem Content = "Item #3"/>
-            </ComboBox>
-            <Button x:Name="myButton" >Click Me</Button>
-            <Button>Hello</Button>
+            <DropDownButton Content="Email">
+                <DropDownButton.Flyout>
+                    <MenuFlyout Placement="Bottom">
+                        <MenuFlyoutItem Text="Send"/>
+                        <MenuFlyoutItem Text="Reply"/>
+                        <MenuFlyoutItem Text="Reply All"/>
+                    </MenuFlyout>
+                </DropDownButton.Flyout>
+            </DropDownButton>
         </StackPanel>
     </Grid>
 </Page>
