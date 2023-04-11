@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SwitchDisplayUI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SwitchDisplayUI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
