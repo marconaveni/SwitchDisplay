@@ -23,11 +23,13 @@ namespace SwitchDisplayUI
     /// <summary>
     /// An empty window that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainWindow : Window , Theme
+    public sealed partial class MainWindow : Window 
     {
         WindowsSystemDispatcherQueueHelper m_wsdqHelper; // See below for implementation.
         MicaController m_backdropController;
         SystemBackdropConfiguration m_configurationSource;
+
+        Theme theme = new();
 
         bool TrySetSystemBackdrop()
         {
