@@ -9,7 +9,7 @@
   <Identity
     Name="a38793be-9e5a-4823-afd7-3912506d0134"
     Publisher="CN=Marco"
-    Version="1.0.0.0" />
+    Version="1.0.3.0" />
 
   <Properties>
     <DisplayName>SwitchDisplayUI</DisplayName>
@@ -32,7 +32,7 @@
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
         DisplayName="SwitchDisplayUI"
-        Description="SwitchDisplayUI"
+        Description="Switch Display"
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png">

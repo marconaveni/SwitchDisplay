@@ -10,53 +10,24 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-
-
-    <Grid  >
+    <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="32"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid x:Name="AppTitleBar" Background="Transparent">
+        <Grid x:Name="AppTitleBar">
             <Image Source="Images/"
                    HorizontalAlignment="Left" 
                    Width="16" Height="16" 
                    Margin="8,0"/>
-            <TextBlock x:Name="AppTitleTextBlock" Text="App title"
+            <TextBlock x:Name="AppTitle" Text="Switch Display"
                TextWrapping="NoWrap"
                Style="{StaticResource CaptionTextBlockStyle}" 
                VerticalAlignment="Top"
                Margin="28,8,0,0"/>
         </Grid>
-        
-        
-
-        <NavigationView Grid.Row="1"
-                        IsBackButtonVisible="Collapsed"
-                        IsSettingsVisible="False">
-            <StackPanel >
-                <TextBlock Text="Content" 
-                           Style="{ThemeResource TitleTextBlockStyle}"
-                           Margin="32,0,0,0"/>
-            </StackPanel>
-
-        </NavigationView>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="main">
-            <ComboBox  x:Name="cmbDisplays" >
-                <ComboBoxItem Content = "Item #1"/>
-                <ComboBoxItem Content = "Item #2"/>
-                <ComboBoxItem Content = "Item #3"/>
-            </ComboBox>
-            <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
-            <Button >Hello</Button>
             <Frame x:Name="rootFrame"/>
         </StackPanel>
-
-
-
     </Grid>
-
-
-    <!--main-->
-
 </Window>

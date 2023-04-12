@@ -9,19 +9,22 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    
+    Background="Transparent">
+
     <Grid>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <DropDownButton Content="Email">
-                <DropDownButton.Flyout>
-                    <MenuFlyout Placement="Bottom">
-                        <MenuFlyoutItem Text="Send"/>
-                        <MenuFlyoutItem Text="Reply"/>
-                        <MenuFlyoutItem Text="Reply All"/>
-                    </MenuFlyout>
-                </DropDownButton.Flyout>
-            </DropDownButton>
+        <StackPanel Margin="8 0 8 40" Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Top" MinWidth="300" >
+            <StackPanel Orientation="Horizontal" Margin="8 0 8 35">
+                <FontIcon Glyph="&#xE7F4;" Margin="8"/>
+                <TextBlock Margin="8" HorizontalAlignment="Center" FontSize="25" FontWeight="Semibold"  >Switch Screen Primary</TextBlock>
+            </StackPanel>
+            <ComboBox Margin="8" x:Name="cmbDisplays" HorizontalContentAlignment="Center" SelectionChanged="cmbDisplays_SelectionChanged" HorizontalAlignment="Stretch"/>
+            <Button Margin="8" x:Name="BtnApply" HorizontalAlignment="Stretch" Click="BtnApply_Click" IsEnabled="False" >
+                <StackPanel  Orientation="Horizontal">
+                    <SymbolIcon Symbol="Accept"/>
+                    <TextBlock Text=" Apply"/>
+                </StackPanel>
+            </Button>
+
         </StackPanel>
     </Grid>
 </Page>
